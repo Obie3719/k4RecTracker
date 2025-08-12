@@ -18,6 +18,6 @@ ddsim --steeringFile $STEERING_FILE \
       --numberOfEvents 100 \
       --outputFile output_rootFiles/ee_z_mumu0.root 
     
-k4run Tracking/test/testTrackFinder/runTestTrackFinder.py --inputFile output_rootFiles/ee_z_mumu0.root --outputFile output_rootFiles/ee_z_mumu1.root --modelPath $MODEL_PATH --tbeta $TBETA --td $TD
+#k4run Tracking/test/testTrackFinder/runTestTrackFinder.py --inputFile output_rootFiles/ee_z_mumu0.root --outputFile output_rootFiles/ee_z_mumu1.root --modelPath $MODEL_PATH --tbeta $TBETA --td $TD
 
-k4run Tracking/test/testTrackFitter/runTestTrackFitter.py --inputFile output_rootFiles/ee_z_mumu1.root --outputFile output_rootFiles/ee_z_mumu2.root
+#sourk4run Tracking/test/testTrackFitter/runTestTrackFitter.py --inputFile output_rootFiles/ee_z_mumu1.root --outputFile output_rootFiles/ee_z_mumu2.root
