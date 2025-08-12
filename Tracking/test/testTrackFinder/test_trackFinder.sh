@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-MODEL_PATH=/work/omunkombwe/k4RecTracker/Tracking/test/inputFiles/SimpleGatrIDEAv3o1.onnx.md5
+MODEL_PATH=/work/omunkombwe/k4RecTracker/build/Tracking/test/inputFiles/SimpleGatrIDEAv3o1.onnx
 
 
 XML_FILE=$K4GEO/FCCee/IDEA/compact/IDEA_o1_v03/IDEA_o1_v03.xml
@@ -22,4 +22,4 @@ ddsim --steeringFile $STEERING_FILE \
 
 
    
-k4run runTestTrackFinder.py --inputFile out_sim_edm4hep.root --outputFile out_tracks.root --modelPath $MODEL_PATH --tbeta $TBETA --td $TD
+k4run /work/omunkombwe/k4RecTracker/Tracking/test/testTrackFinder/runTestTrackFinder.py --inputFile out_sim_edm4hep.root --outputFile out_tracks.root --modelPath $MODEL_PATH --tbeta $TBETA --td $TD

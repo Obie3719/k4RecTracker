@@ -112,7 +112,7 @@ GGTF = GGTF_tracking(
     inputWireHits=["DCH_DigiCollection"],
     inputPlanarHits=["VTXBDigis", "VTXDDigis", "SiWrBDigis", "SiWrDDigis"],
     outputTracks=["CDCHTracks"],
-    OutputLevel=INFO,
+    OutputLevel=DEBUG,
 )
 GGTF.modelPath = args.modelPath
 GGTF.tbeta = args.tbeta
@@ -128,5 +128,5 @@ mgr = ApplicationMgr(TopAlg=[dch_digitizer, vtxb_digitizer, vtxd_digitizer, siwr
     EvtSel="NONE",
     EvtMax=-1,
     ExtSvc=[geoservice,EventDataSvc("EventDataSvc"),UniqueIDGenSvc("uidSvc"),RndmGenSvc()],
-    OutputLevel=INFO,
+    OutputLevel=DEBUG,
     )
