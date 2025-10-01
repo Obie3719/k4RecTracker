@@ -60,4 +60,4 @@ CPackConfig.cmake
 cmake_install.cmake
 
 SteeringFile*
-setup.sh
+setup.shoutput_rootFiles/
