@@ -105,12 +105,11 @@ dch_digitizer = DCHdigi_v01("DCHdigi",
 )
 
 ############### Track Finder
-from Configurables import GGTF_tracking
+rom Tracking.TrackingConf import TracksFromGenParticles
 
-GGTF = GGTF_tracking(
-    "GGTF_tracking",
-    inputWireHits=["DCH_DigiCollection"],
-    inputPlanarHits=["VTXBDigis", "VTXDDigis", "SiWrBDigis", "SiWrDDigis"],
+GGTF = TracksFromGenParticles(
+    "TracksFromGenParticles",
+    GenParticles=["MCParticles"],    # your input MC truth collection
     outputTracks=["CDCHTracks"],
     OutputLevel=INFO,
 )

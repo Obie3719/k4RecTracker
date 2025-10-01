@@ -1,3 +1,4 @@
+
 from DDSim.DD4hepSimulation import DD4hepSimulation
 from g4units import mm, GeV, MeV, degree
 
@@ -16,9 +17,9 @@ SIM.inputFiles = []
 ## Macro file to execute for runType 'run' or 'vis'
 SIM.macroFile = ""
 ## number of events to simulate, used in batch mode
-SIM.numberOfEvents = 1000
+SIM.numberOfEvents = 100
 ## Outputfile from the simulation: .slcio, edm4hep.root and .root output files are supported
-SIM.outputFile = "testIDEA_o1_v03.root"
+SIM.outputFile = "/ceph/omunkombwe/out_sim_idea_o1_v03_60.root"
 ## Physics list to use in simulation
 SIM.physicsList = "FTFP_BERT"
 ## Verbosity use integers from 1(most) to 7(least) verbose
@@ -249,7 +250,7 @@ SIM.guineapig.particlesPerEvent = "-1"
 ################################################################################
 
 ##  direction of the particle gun, 3 vector
-SIM.gun.direction = (1.0, 0.1, 0.1)
+SIM.gun.direction = (0.0, 0.0, 1.0)
 
 ## choose the distribution of the random direction for theta
 ##
@@ -262,7 +263,7 @@ SIM.gun.direction = (1.0, 0.1, 0.1)
 ##
 ##     Setting a distribution will set isotrop = True
 ##
-SIM.gun.distribution = None
+SIM.gun.distribution = "uniform"
 
 ## Total energy (including mass) for the particle gun.
 ##
@@ -283,10 +284,10 @@ SIM.gun.etaMin = None
 SIM.gun.isotrop = False
 
 ## Maximal momentum when using distribution (default = 0.0)
-# SIM.gun.momentumMax = 10000.0
+SIM.gun.momentumMax = 5 * GeV
 
 ## Minimal momentum when using distribution (default = 0.0)
-# SIM.gun.momentumMin = 0.0
+SIM.gun.momentumMin = 0.5 * GeV
 SIM.gun.multiplicity = 1
 SIM.gun.particle = "mu-"
 
@@ -322,7 +323,7 @@ SIM.hepmc3.Flow2 = "flow2"
 ##
 ##     Defaults to true if DD4hep was build with HEPMC3 support.
 ##
-SIM.hepmc3.useHepMC3 = False
+SIM.hepmc3.useHepMC3 = True
 
 
 ################################################################################
