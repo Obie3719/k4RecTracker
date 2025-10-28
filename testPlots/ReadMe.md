@@ -1,15 +1,15 @@
-# IDEA Tracking Efficiency — Method & Implementation Guide
+# IDEA Tracking Efficiency 
 
-This README explains the **what/why/how** of the tracking-efficiency study with the IDEA detector and a muon gun. It ties each concept to **exact places in `eff.ipynb`notebook**.
+This README explains the tracking-efficiency study with the IDEA detector and a muon gun. It explains the concepts in `eff.ipynb`notebook.
 ---
 
-## 1) What is being mapped (digi → MC) and how
+## 1) Mapping (digi → MC) 
 
 **Goal.** For every *digitized hit* (a “digi”) used by a fitted track, decide which **MC particle** it came from. Once each digi has an MC label, we can count how many track hits belong to each truth particle.
 
 **Rule used — [Majority-of-links](https://twiki.cern.ch/twiki/bin/view/CMSPublic/SWGuideTrackMCTruth?).** Each digi is linked to one or more **sim-hits**; each sim-hit belongs to an **MC particle**. For that digi, we **count** how many linked sim-hits point to each MC and pick the MC with the **largest count** (ties broken determined by larger MC id).
 
-**Where in code.**
+**Code:**
 
 * `make_digi_to_mc_map(...)` builds a **per-event dictionary** `{digi_index → mc_id}` for each subdetector. It’s called five times:
 
