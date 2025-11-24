@@ -1,7 +1,7 @@
 import math
 import numpy as np
 import matplotlib
-matplotlib.use("Agg")  # must come before importing pyplot
+matplotlib.use("Agg")  
 import matplotlib.pyplot as plt
 from collections import defaultdict, Counter
 from podio.reading import get_reader
