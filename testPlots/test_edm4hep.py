@@ -45,6 +45,10 @@ def match_tracks(event): # match reconstructed tracks to MC truth particles
 
     matches = []
     for _, track in enumerate(tracks):
+        
+        if track.trackerHits_size() < 4:
+            continue
+        
         counts = Counter()
         for ihit in range(track.trackerHits_size()):
             digi = track.getTrackerHits(ihit)
@@ -110,7 +114,7 @@ def accumulate_efficiency(events, pt_bins):
             if bin_idx < 0 or bin_idx >= len(totals):
                 continue  # pT outside defined bins
             totals[bin_idx] += 1
-            if best_purity.get(idx, 0.0) >= 0.75:
+            if best_purity.get(idx, 0.0) >= 0.80:
                 selected[bin_idx] += 1
     return totals, selected
 
@@ -141,7 +145,7 @@ def plot_eff_vs_pt(pt_bins, totals, selected, out="eff_vs_pt.png"):
     plt.errorbar(centers, eff, yerr=err, fmt="o", color="C0", label="efficiency")
     plt.xlabel("pT [GeV]")
     plt.ylabel("Tracking efficiency")
-    plt.ylim(0.9, 1.05)
+    plt.ylim(0.8, 1.05)
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
