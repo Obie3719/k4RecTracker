@@ -301,7 +301,7 @@ struct GGTF_tracking final :
                 // Add the difference between the right and left hit positions to the global input list.
                 ListGlobalInputs.push_back(0.0); 
                 ListGlobalInputs.push_back(right_global_pos.X()-left_global_pos.X());
-                ListGlobalInputs.push_back(right_global_pos.y()-left_global_pos.Y());
+                ListGlobalInputs.push_back(right_global_pos.Y()-left_global_pos.Y());
                 ListGlobalInputs.push_back(right_global_pos.Z()-left_global_pos.Z());
                 
                 // Store the current index in ListHitType_Wire and increment the global iterator.
