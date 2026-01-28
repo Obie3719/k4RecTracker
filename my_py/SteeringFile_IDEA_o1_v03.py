@@ -11,15 +11,15 @@ SIM.crossingAngleBoost = 0.0
 SIM.enableDetailedShowerMode = False
 SIM.enableG4GPS = False
 SIM.enableG4Gun = False
-SIM.enableGun = True
+SIM.enableGun = False
 ## InputFiles for simulation .stdhep, .slcio, .HEPEvt, .hepevt, .pairs, .hepmc, .hepmc.gz, .hepmc.xz, .hepmc.bz2, .hepmc3, .hepmc3.gz, .hepmc3.xz, .hepmc3.bz2, .hepmc3.tree.root files are supported
 SIM.inputFiles = []
 ## Macro file to execute for runType 'run' or 'vis'
 SIM.macroFile = ""
 ## number of events to simulate, used in batch mode
-SIM.numberOfEvents = 100
+SIM.numberOfEvents = 100000
 ## Outputfile from the simulation: .slcio, edm4hep.root and .root output files are supported
-SIM.outputFile = "/ceph/omunkombwe/out_sim_idea_o1_v03_60.root"
+SIM.outputFile = "/ceph/omunkombwe/sim_idea_mumu100k.root"
 ## Physics list to use in simulation
 SIM.physicsList = "FTFP_BERT"
 ## Verbosity use integers from 1(most) to 7(least) verbose
@@ -75,7 +75,7 @@ SIM.vertexSigma = [0.0, 0.0, 0.0, 0.0]
 ##   >>> SIM.action.run = "Geant4TestRunAction"
 ##   # multiple actions with comma-separated names:
 ##   >>> SIM.action.event = "Geant4TestEventAction/Action0,Geant4TestEventAction/Action1"
-##   # single action by tuple of name and parameter dict:
+##   # single action by tuple o./FCCee/IDEA/compact/IDEA_o1_v03/IDEA_o1_v03.xmlf name and parameter dict:
 ##   >>> SIM.action.track = ( "Geant4TestTrackAction", {"Property_int": 10} )
 ##   # single action by dict of name and parameter dict:
 ##   >>> SIM.action.step = { "name": "Geant4TestStepAction", "parameter": {"Property_int": 10} }
@@ -91,7 +91,7 @@ SIM.vertexSigma = [0.0, 0.0, 0.0, 0.0]
 ##     "parameter": {
 ##       "Property_int": 10,
 ##       "Property_double": "1.0*mm"
-##     }
+##     }./FCCee/IDEA/compact/IDEA_o1_v03/IDEA_o1_v03.xml
 ##   }
 ##   '''
 ##
@@ -323,7 +323,7 @@ SIM.hepmc3.Flow2 = "flow2"
 ##
 ##     Defaults to true if DD4hep was build with HEPMC3 support.
 ##
-SIM.hepmc3.useHepMC3 = True
+SIM.hepmc3.useHepMC3 = False
 
 
 ################################################################################

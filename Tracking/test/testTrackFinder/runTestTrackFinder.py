@@ -33,6 +33,7 @@ geoservice.OutputLevel = INFO
 from Configurables import DDPlanarDigi
 from Configurables import DCHdigi_v01
 
+
 ############### Vertex Digitizer
 
 innerVertexResolution_x = 0.003 # [mm], assume 3 µm resolution for ARCADIA sensor
@@ -92,12 +93,18 @@ siwrd_digitizer.TrackerHitCollectionName = ["SiWrDDigis"]
 siwrd_digitizer.ForceHitsOntoSurface = True
 
 
+# Use local FORGEANT calibration file (batch nodes may not have wget / internet)
+local_forgeant = "/work/omunkombwe/k4RecTracker/Tracking/test/testTrackFinder/DataAlgFORGEANT.root"
+if not os.path.isfile(local_forgeant):
+    raise FileNotFoundError(f"Missing DataAlgFORGEANT.root at: {local_forgeant}")
+
 ############### DCH Digitizer
 
 dch_digitizer = DCHdigi_v01("DCHdigi",
     DCH_simhits = ["DCHCollection"],
     DCH_name = "DCH_v2",
-    fileDataAlg = "DataAlgFORGEANT.root",
+    #fileDataAlg = "DataAlgFORGEANT.root",
+    fileDataAlg = local_forgeant,
     calculate_dndx = False, # cluster counting disabled (to be validated, see FCC-config#239)
     create_debug_histograms = False,
     zResolution_mm = 30., # in mm - Note: At this point, the z resolution comes without the stereo measurement
@@ -119,10 +126,13 @@ GGTF.tbeta = args.tbeta
 GGTF.td = args.td
 
 ############### Application Manager
-import subprocess
+#import subprocess
 
-ifilename = "https://fccsw.web.cern.ch/fccsw/filesForSimDigiReco/IDEA/DataAlgFORGEANT.root"
-subprocess.run(["wget", "--no-clobber", ifilename])
+#ifilename = "https://fccsw.web.cern.ch/fccsw/filesForSimDigiReco/IDEA/DataAlgFORGEANT.root"
+#subprocess.run(["wget", "--no-clobber", ifilename])
+
+
+
 
 mgr = ApplicationMgr(TopAlg=[dch_digitizer, vtxb_digitizer, vtxd_digitizer, siwrb_digitizer, siwrd_digitizer,GGTF],
     EvtSel="NONE",

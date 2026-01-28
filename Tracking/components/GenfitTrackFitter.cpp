@@ -510,8 +510,8 @@ struct GenfitTrackFitter final :
         double m_eCalEndCapInnerZ = 0;
         double m_eCalEndCapOuterZ = 0;
 
-        // std::vector<int> m_particleHypotesis = {11,13,211,321,2212}; // e, mu, pi, K, p
-        std::vector<int> m_particleHypotesis = {13}; //mu-
+        std::vector<int> m_particleHypotesis = {11,13,211,321,2212}; // e, mu, pi, K, p
+        // std::vector<int> m_particleHypotesis = {13}; //mu-
 
 
 };

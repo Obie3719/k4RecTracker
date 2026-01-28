@@ -46,8 +46,8 @@ def match_tracks(event): # match reconstructed tracks to MC truth particles
     matches = []
     for _, track in enumerate(tracks):
         
-        if track.trackerHits_size() < 4:
-            continue
+        #if track.trackerHits_size() < 4:
+        #    continue
         
         counts = Counter()
         for ihit in range(track.trackerHits_size()):
@@ -70,7 +70,7 @@ def match_tracks(event): # match reconstructed tracks to MC truth particles
 
 
 #PT_BINS = np.array([0.5, 0.8, 1.2, 1.6, 2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0])  # GeV
-PT_BINS = np.linspace(0.5, 4.5, 25)  # GeV
+PT_BINS = np.linspace(0, 46, 21)  # GeV
 
 def mc_pt(mc):
     mom = mc.getMomentum()
@@ -114,7 +114,7 @@ def accumulate_efficiency(events, pt_bins):
             if bin_idx < 0 or bin_idx >= len(totals):
                 continue  # pT outside defined bins
             totals[bin_idx] += 1
-            if best_purity.get(idx, 0.0) >= 0.80:
+            if best_purity.get(idx, 0.0) >= 0.75:
                 selected[bin_idx] += 1
     return totals, selected
 
@@ -136,16 +136,17 @@ def wald_interval(selected, totals, z=1):
 
 
 
-def plot_eff_vs_pt(pt_bins, totals, selected, out="eff_vs_pt.png"):
+def plot_eff_vs_pt(pt_bins, totals, selected, out="eff_vs_pt_ezm.png"):
     
     eff, err = wald_interval(selected, totals, z=1.0)  # 68% CL (1 sigma)
     centers = 0.5 * (pt_bins[:-1] + pt_bins[1:])
     
     
     plt.errorbar(centers, eff, yerr=err, fmt="o", color="C0", label="efficiency")
+    plt.title("Tracking Efficiency vs pT (Old-digitizer)")
     plt.xlabel("pT [GeV]")
     plt.ylabel("Tracking efficiency")
-    plt.ylim(0.8, 1.05)
+    plt.ylim(0.0, 1.05)
     plt.grid(True, alpha=0.3)
     plt.legend()
     plt.tight_layout()
@@ -154,8 +155,7 @@ def plot_eff_vs_pt(pt_bins, totals, selected, out="eff_vs_pt.png"):
 
 
 if __name__ == "__main__":
-    reader = get_reader("/ceph/omunkombwe/fit__idea_o1_v03_60.root")
+    reader = get_reader("/ceph/omunkombwe/fitter_idea_mumu50k.root")
     events = reader.get("events")
     totals, selected = accumulate_efficiency(events, PT_BINS)
     plot_eff_vs_pt(PT_BINS, totals, selected)
-

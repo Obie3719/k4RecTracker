@@ -9,7 +9,9 @@ STEERING_FILE=/work/omunkombwe/k4RecTracker/my_py/SteeringFile_IDEA_o1_v03.py
 TBETA=0.6
 TD=0.3
 
-
+SIM_OUTPUT=/ceph/omunkombwe/sim_idea_o1_v03_60.root
+FINDER_OUTPUT=/ceph/omunkombwe/digi__idea_o1_v03_60.root
+FITTER_OUTPUT=/ceph/omunkombwe/fit_idea_o1_v03_60.root
 #curl -o $STEERING_FILE https://raw.githubusercontent.com/key4hep/k4geo/master/example/SteeringFile_IDEA_o1_v03.py
 
 
@@ -23,11 +25,11 @@ ddsim \
   --gun.particle mu- \
   --gun.thetaMin "60*degree" \
   --gun.thetaMax "60*degree" \
-  --numberOfEvents 100 \
-  --random.enableEventSeed \
+  --numberOfEvents 5000 \
+  -random.enableEventSeed \
   --random.seed 10 \
-  --outputFile /ceph/omunkombwe/out_sim_idea_o1_v03_60.root
+  --outputFile $SIM_OUTPUT
 
 
-k4run /work/omunkombwe/k4RecTracker/Tracking/test/testTrackFinder/runTestTrackFinder.py --inputFile /ceph/omunkombwe/out_sim_idea_o1_v03_60.root --outputFile /ceph/omunkombwe/out_tracks1_60.root --modelPath $MODEL_PATH --tbeta $TBETA --td $TD
-k4run /work/omunkombwe/k4RecTracker/Tracking/test/testTrackFitter/runTestTrackFitter.py --inputFile /ceph/omunkombwe/out_tracks1_60.root --outputFile /ceph/omunkombwe/output_tracks1_new_60.root
+k4run /work/omunkombwe/k4RecTracker/Tracking/test/testTrackFinder/runTestTrackFinder.py --inputFile $SIM_OUTPUT --outputFile $FINDER_OUTPUT --modelPath $MODEL_PATH --tbeta $TBETA --td $TD
+k4run /work/omunkombwe/k4RecTracker/Tracking/test/testTrackFinder/runTestTrackFitter.py --inputFile $FINDER_OUTPUT --outputFile $FITTER_OUTPUT

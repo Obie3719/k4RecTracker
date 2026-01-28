@@ -8,13 +8,13 @@ STEERING_FILE=/work/omunkombwe/k4RecTracker/my_py/SteeringFile_IDEA_o1_v03.py
 TBETA=0.6
 TD=0.3
 
-HEPMC_INPUT=/work/omunkombwe/k4RecTracker/my_HEPMC/ee_mumu10k.hepmc
-SIM_EVENTS=${SIM_EVENTS:-10000}
+HEPMC_INPUT=/work/omunkombwe/k4RecTracker/testPlots/new_sample1/Events/run_01/tag_1_pythia8_events.hepmc
+SIM_EVENTS=${SIM_EVENTS:-50000}
 RANDOM_SEED=${RANDOM_SEED:-42}
 
-SIM_OUTPUT=/ceph/omunkombwe/ee_z_mumu_sim.root
-FINDER_OUTPUT=/ceph/omunkombwe/ee_z_mumu_finder.root
-FITTER_OUTPUT=/ceph/omunkombwe/ee_z_mumu_fitter.root
+SIM_OUTPUT=/ceph/omunkombwe/sim_idea_mumu100k.root
+FINDER_OUTPUT=/ceph/omunkombwe/finder_idea_mumu100k.root
+FITTER_OUTPUT=/ceph/omunkombwe/fitter_idea_mumu100k.root
 
 #curl -o $STEERING_FILE https://raw.githubusercontent.com/key4hep/k4geo/master/example/SteeringFile_IDEA_o1_v03.py
 
