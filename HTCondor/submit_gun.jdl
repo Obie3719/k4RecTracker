@@ -1,0 +1,18 @@
+universe         = vanilla
+executable       = gun_fullsim_reco.sh
+arguments        = $(P_MIN) $(P_MAX) $(SEED) $(NEV)
+
+request_cpus     = 1
+request_memory   = 6000
+request_disk     = 12000
++RequestWalltime = 6*3600
+
+log              = logs/gun_$(ClusterID).log
+output           = logs/gun_$(ClusterID)_$(ProcID).out
+error            = logs/gun_$(ClusterID)_$(ProcID).err
+
+queue P_MIN, P_MAX, SEED, NEV from (
+  0.1,  3.5,   101, 3
+  5,    20,    102, 3
+  50,   120,   103, 3
+)
