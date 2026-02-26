@@ -1,0 +1,32 @@
+Universe = vanilla
+
+initialdir = /work/omunkombwe/k4RecTracker
+executable = HTCondor/gun_fullsim_reco.sh
+arguments  = $(P_MIN) $(P_MAX) $(SEED) $(NEV) $(THETA_DEG) $(SPLIT_ID)
+
+request_cpus   = 1
+request_memory = 24000
+request_disk   = 5000000
++RequestWalltime = 24*3600
+
+log    = logs/gun_$(ClusterID).log
+stdout = logs/gun_$(ClusterID)_$(ProcID).out
+stderr = logs/gun_$(ClusterID)_$(ProcID).err
+
+queue P_MIN, P_MAX, SEED, NEV, THETA_DEG, SPLIT_ID from (
+  0.2, 15, 1201, 2000, 20, 1
+  0.2, 15, 1601, 2000, 60, 1
+  0.2, 15, 1901, 2000, 90, 1
+  0.2, 15, 1202, 2000, 20, 2
+  0.2, 15, 1602, 2000, 60, 2
+  0.2, 15, 1902, 2000, 90, 2
+  0.2, 15, 1203, 2000, 20, 3
+  0.2, 15, 1603, 2000, 60, 3
+  0.2, 15, 1903, 2000, 90, 3
+  0.2, 15, 1204, 2000, 20, 4
+  0.2, 15, 1604, 2000, 60, 4
+  0.2, 15, 1904, 2000, 90, 4
+  0.2, 15, 1205, 2000, 20, 5
+  0.2, 15, 1605, 2000, 60, 5
+  0.2, 15, 1905, 2000, 90, 5
+)

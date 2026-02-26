@@ -1,0 +1,333 @@
+Info in <TGeoManager::TGeoManager>: Geometry default, Detector Geometry created
+Info in <TGeoNavigator::BuildCache>: --- Maximum geometry depth set to 100
+Info in <TGeoManager::SetTopVolume>: Top volume is world_volume. Master volume is world_volume
+Info in <TGeoManager::CheckGeometry>: Fixing runtime shapes...
+Info in <TGeoManager::CheckGeometry>: ...Nothing to fix
+Info in <TGeoManager::CloseGeometry>: Counting nodes...
+Info in <TGeoManager::Voxelize>: Voxelizing...
+Info in <TGeoManager::CloseGeometry>: Building cache...
+Info in <TGeoManager::CountLevels>: max level = 8, max placements = 21600
+Info in <TGeoManager::CloseGeometry>: 260245099 nodes/ 36749 volume UID's in Detector Geometry
+Info in <TGeoManager::CloseGeometry>: ----------------modeler ready----------------
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/HelixTrackModel.h
+   requested to autoload type genfit::HelixTrackModel
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/MeasurementCreator.h
+   requested to autoload type genfit::MeasurementCreator
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/mySpacepointDetectorHit.h
+   requested to autoload type genfit::mySpacepointDetectorHit
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/mySpacepointMeasurement.h
+   requested to autoload type genfit::mySpacepointMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/include/RKTrackRep.h
+   requested to autoload type genfit::RKTrackRep
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/include/MplTrackRep.h
+   requested to autoload type genfit::MplTrackRep
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixPhi.h
+   requested to autoload type genfit::HMatrixPhi
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixU.h
+   requested to autoload type genfit::HMatrixU
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixUnit.h
+   requested to autoload type genfit::HMatrixUnit
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixV.h
+   requested to autoload type genfit::HMatrixV
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixUV.h
+   requested to autoload type genfit::HMatrixUV
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/FullMeasurement.h
+   requested to autoload type genfit::FullMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/PlanarMeasurement.h
+   requested to autoload type genfit::PlanarMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/ProlateSpacepointMeasurement.h
+   requested to autoload type genfit::ProlateSpacepointMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WireMeasurement.h
+   requested to autoload type genfit::WireMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WireMeasurementNew.h
+   requested to autoload type genfit::WireMeasurementNew
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WirePointMeasurement.h
+   requested to autoload type genfit::WirePointMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WireTrackCandHit.h
+   requested to autoload type genfit::WireTrackCandHit
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/GBL/include/GFGbl.h
+   requested to autoload type genfit::GFGbl
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/GBL/include/GblFitter.h
+   requested to autoload type genfit::GblFitter
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/AbsKalmanFitter.h
+   requested to autoload type genfit::AbsKalmanFitter
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFittedStateOnPlane.h
+   requested to autoload type genfit::KalmanFittedStateOnPlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitStatus.h
+   requested to autoload type genfit::KalmanFitStatus
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/ReferenceStateOnPlane.h
+   requested to autoload type genfit::ReferenceStateOnPlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitterRefTrack.h
+   requested to autoload type genfit::KalmanFitterRefTrack
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitter.h
+   requested to autoload type genfit::KalmanFitter
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitterInfo.h
+   requested to autoload type genfit::KalmanFitterInfo
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/DAF.h
+   requested to autoload type genfit::DAF
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/eventDisplay/include/EventDisplay.h
+   requested to autoload type genfit::EventDisplay
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/AbsFinitePlane.h
+   requested to autoload type genfit::AbsFinitePlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/AbsFitterInfo.h
+   requested to autoload type genfit::AbsFitterInfo
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/AbsMeasurement.h
+   requested to autoload type genfit::AbsMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/ThinScatterer.h
+   requested to autoload type genfit::ThinScatterer
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/Track.h
+   requested to autoload type genfit::Track
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/finitePlanes/include/RectangularFinitePlane.h
+   requested to autoload type genfit::RectangularFinitePlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/HelixTrackModel.h
+   requested to autoload type genfit::HelixTrackModel
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/MeasurementCreator.h
+   requested to autoload type genfit::MeasurementCreator
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/mySpacepointDetectorHit.h
+   requested to autoload type genfit::mySpacepointDetectorHit
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/utilities/include/mySpacepointMeasurement.h
+   requested to autoload type genfit::mySpacepointMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/include/RKTrackRep.h
+   requested to autoload type genfit::RKTrackRep
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/include/MplTrackRep.h
+   requested to autoload type genfit::MplTrackRep
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixPhi.h
+   requested to autoload type genfit::HMatrixPhi
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixU.h
+   requested to autoload type genfit::HMatrixU
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixUnit.h
+   requested to autoload type genfit::HMatrixUnit
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixV.h
+   requested to autoload type genfit::HMatrixV
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/HMatrixUV.h
+   requested to autoload type genfit::HMatrixUV
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/FullMeasurement.h
+   requested to autoload type genfit::FullMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/PlanarMeasurement.h
+   requested to autoload type genfit::PlanarMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/ProlateSpacepointMeasurement.h
+   requested to autoload type genfit::ProlateSpacepointMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WireMeasurement.h
+   requested to autoload type genfit::WireMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WireMeasurementNew.h
+   requested to autoload type genfit::WireMeasurementNew
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WirePointMeasurement.h
+   requested to autoload type genfit::WirePointMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/measurements/include/WireTrackCandHit.h
+   requested to autoload type genfit::WireTrackCandHit
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/GBL/include/GFGbl.h
+   requested to autoload type genfit::GFGbl
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/GBL/include/GblFitter.h
+   requested to autoload type genfit::GblFitter
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/AbsKalmanFitter.h
+   requested to autoload type genfit::AbsKalmanFitter
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFittedStateOnPlane.h
+   requested to autoload type genfit::KalmanFittedStateOnPlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitStatus.h
+   requested to autoload type genfit::KalmanFitStatus
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/ReferenceStateOnPlane.h
+   requested to autoload type genfit::ReferenceStateOnPlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitterRefTrack.h
+   requested to autoload type genfit::KalmanFitterRefTrack
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitter.h
+   requested to autoload type genfit::KalmanFitter
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/KalmanFitterInfo.h
+   requested to autoload type genfit::KalmanFitterInfo
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/fitters/include/DAF.h
+   requested to autoload type genfit::DAF
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/eventDisplay/include/EventDisplay.h
+   requested to autoload type genfit::EventDisplay
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/AbsFinitePlane.h
+   requested to autoload type genfit::AbsFinitePlane
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/AbsFitterInfo.h
+   requested to autoload type genfit::AbsFitterInfo
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/AbsMeasurement.h
+   requested to autoload type genfit::AbsMeasurement
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/ThinScatterer.h
+   requested to autoload type genfit::ThinScatterer
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/include/Track.h
+   requested to autoload type genfit::Track
+Error in cling::AutoLoadingVisitor::InsertIntoAutoLoadingState:
+   Missing FileEntry for /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/finitePlanes/include/RectangularFinitePlane.h
+   requested to autoload type genfit::RectangularFinitePlane
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+RKTrackRep::RKutta ==> momentum too low: 0.125891 MeV
+in line: 1847 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/RKTrackRep.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+RKTrackRep::RKutta ==> Do not get closer to plane!
+in line: 1953 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/RKTrackRep.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+RKTrackRep::RKutta ==> momentum too low: 1.17595 MeV
+in line: 1847 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/RKTrackRep.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+KalmanFitterInfo::calcAverageState: ill-conditioned covariance matrix.
+in line: 149 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/core/src/MeasuredStateOnPlane.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+MaterialEffects::dEdxBetheBloch ==> beta*gamma < 0.05, Bethe-Bloch implementation not valid anymore!
+in line: 477 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/MaterialEffects.cc
+with fatal flag 0
+genfit::Exception thrown with excString:
+RKTrackRep::RKutta ==> momentum too low: 0.532877 MeV
+in line: 1847 in file: /tmp/root/spack-stage/spack-stage-genfit-02-00-05-uvuy5cocm6n42u22budt4jtezbgjsomk/spack-src/trackReps/src/RKTrackRep.cc
+with fatal flag 0

@@ -1,0 +1,18 @@
+Universe = vanilla
+initialdir = /work/omunkombwe/k4RecTracker
+executable = $(filename)
+
+request_cpus = 1
+request_memory = 12000
+accounting_group = cms.higgs
+request_disk = 1000000
++RequestWalltime = 4*3600
+
+log = /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/log/retry_3715339_$(ClusterID).log
+output = /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/out/retry_3715339_$(ClusterID)_$(ProcID).out
+error = /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/err/retry_3715339_$(ClusterID)_$(ProcID).err
+
+queue filename from (
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta46/submit_theta46_part7.sh
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta89/submit_theta89_part60.sh
+)

@@ -1,0 +1,22 @@
+Universe = vanilla
+initialdir = /work/omunkombwe/k4RecTracker
+executable = $(filename)
+
+request_cpus = 1
+request_memory = 12000
+accounting_group = cms.higgs
+request_disk = 1000000
++RequestWalltime = 4*3600
+
+log = /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/log/retry_9029893_$(ClusterID).log
+output = /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/out/retry_9029893_$(ClusterID)_$(ProcID).out
+error = /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/err/retry_9029893_$(ClusterID)_$(ProcID).err
+
+queue filename from (
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta46/submit_theta46_part77.sh
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta60/submit_theta60_part75.sh
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta75/submit_theta75_part73.sh
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta89/submit_theta89_part5.sh
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta89/submit_theta89_part12.sh
+  /work/omunkombwe/k4RecTracker/HTCondor/gun_split_submit/theta89/submit_theta89_part13.sh
+)

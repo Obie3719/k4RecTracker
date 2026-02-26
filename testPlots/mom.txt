@@ -1,0 +1,44 @@
+Active subdetectors: ['DCH', 'VTXB', 'VTXD', 'SIWRB', 'SIWRD']
+Track filter mode: inclusive
+Fit-quality cuts: MIN_NDF=5, MAX_CHI2NDF=10.0
+Truth-matching sim-hit collections: ['DCHCollection', 'VertexBarrelCollection', 'VertexEndcapCollection', 'SiWrBCollection', 'SiWrDCollection']
+Truth-matching association collections: ['DCH_DigiSimAssociationCollection', 'VTXBSimDigiLinks', 'VTXDSimDigiLinks', 'SiWrBSimDigiLinks', 'SiWrDSimDigiLinks']
+Track-filter digi collections: ['DCH_DigiCollection', 'VTXBDigis', 'VTXDDigis', 'SiWrBDigis', 'SiWrDDigis']
+
+Analyzing /ceph/omunkombwe/pi_Barrel_10/deg46/fit_pi_P0.2-10.0GeV_theta46deg_nev100000_merged.root (theta=46 deg)
+  summary: total=100000, with_mc=100000, with_tracks=86595, subdet_pass=84672, matched_raw=82014, matched_quality=81779, quality_rejected=235, used=81779
+           quality_failures(track-candidate): missing_fit=0, low_ndf=632, high_chi2ndf=78
+
+Analyzing /ceph/omunkombwe/pi_Barrel_10/deg60/fit_pi_P0.2-10.0GeV_theta60deg_nev100000_merged.root (theta=60 deg)
+  summary: total=100000, with_mc=100000, with_tracks=86977, subdet_pass=84827, matched_raw=82421, matched_quality=82172, quality_rejected=249, used=82172
+           quality_failures(track-candidate): missing_fit=0, low_ndf=742, high_chi2ndf=133
+
+Analyzing /ceph/omunkombwe/pi_Barrel_10/deg75/fit_pi_P0.2-10.0GeV_theta75deg_nev100000_merged.root (theta=75 deg)
+  summary: total=100000, with_mc=100000, with_tracks=85082, subdet_pass=82241, matched_raw=80141, matched_quality=79872, quality_rejected=269, used=79872
+           quality_failures(track-candidate): missing_fit=0, low_ndf=837, high_chi2ndf=87
+
+Analyzing /ceph/omunkombwe/pi_Barrel_10/deg89/fit_pi_P0.2-10.0GeV_theta89deg_nev100000_merged.root (theta=89 deg)
+  summary: total=100000, with_mc=100000, with_tracks=34376, subdet_pass=27954, matched_raw=25780, matched_quality=25180, quality_rejected=600, used=25180
+           quality_failures(track-candidate): missing_fit=0, low_ndf=744, high_chi2ndf=77
+
+Per-theta fit-quality cutflow:
+  theta= 46°: matched_raw=82014, matched_quality=81779 (99.7%), quality_rejected=235, used=81779, track_candidate_fails: missing=0, low_ndf=632, high_chi2ndf=78
+             stage_eff(%): with_mc/total=100.0, with_tracks/total=86.6, subdet_pass/with_tracks=97.8, matched_raw/subdet_pass=96.9, matched_quality/matched_raw=99.7, used/total=81.8
+  theta= 60°: matched_raw=82421, matched_quality=82172 (99.7%), quality_rejected=249, used=82172, track_candidate_fails: missing=0, low_ndf=742, high_chi2ndf=133
+             stage_eff(%): with_mc/total=100.0, with_tracks/total=87.0, subdet_pass/with_tracks=97.5, matched_raw/subdet_pass=97.2, matched_quality/matched_raw=99.7, used/total=82.2
+  theta= 75°: matched_raw=80141, matched_quality=79872 (99.7%), quality_rejected=269, used=79872, track_candidate_fails: missing=0, low_ndf=837, high_chi2ndf=87
+             stage_eff(%): with_mc/total=100.0, with_tracks/total=85.1, subdet_pass/with_tracks=96.7, matched_raw/subdet_pass=97.4, matched_quality/matched_raw=99.7, used/total=79.9
+  theta= 89°: matched_raw=25780, matched_quality=25180 (97.7%), quality_rejected=600, used=25180, track_candidate_fails: missing=0, low_ndf=744, high_chi2ndf=77
+             stage_eff(%): with_mc/total=100.0, with_tracks/total=34.4, subdet_pass/with_tracks=81.3, matched_raw/subdet_pass=92.2, matched_quality/matched_raw=97.7, used/total=25.2
+Theta  46°: bins(p)=46, bins(pT)=46, bins(invpT)=46, bins(pT2)=46, entries=81779
+Theta  60°: bins(p)=49, bins(pT)=49, bins(invpT)=49, bins(pT2)=49, entries=82172
+Theta  75°: bins(p)=41, bins(pT)=41, bins(invpT)=41, bins(pT2)=41, entries=79872
+Theta  89°: bins(p)=41, bins(pT)=41, bins(invpT)=41, bins(pT2)=41, entries=25180
+Saved pi_idea_barrel_binned_metrics_p.csv
+Saved pi_idea_barrel_binned_metrics_pt.csv
+Saved pi_idea_barrel_binned_metrics_invpt.csv
+Saved pi_idea_barrel_binned_metrics_pt2.csv
+Saved pi_Momentum_Resolution_barrel.png
+Saved pi_Pt_Resolution_barrel.png
+Saved pi_InvPt_Resolution_barrel.png
+Saved pi_Pt2_Resolution_barrel.png
