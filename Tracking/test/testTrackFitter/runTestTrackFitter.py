@@ -30,11 +30,7 @@ trackFitter = GenfitTrackFitter(
     "GenfitTrackFitter",
     
     InputTracks=["CDCHTracks"],
-    OutputFittedTracksElectronHypotesis=["Fitted_tracks_electron"],
-    OutputFittedTracksMuonHypotesis=["Fitted_tracks_muon"],
-    OutputFittedTracksPionHypotesis=["Fitted_tracks_pion"],
-    OutputFittedTracksKaonHypotesis=["Fitted_tracks_kaon"],
-    OutputFittedTracksProtonHypotesis=["Fitted_tracks_proton"],
+    OutputFittedTracks=["Fitted_tracks"],
     OutputLevel=DEBUG,
 )
 

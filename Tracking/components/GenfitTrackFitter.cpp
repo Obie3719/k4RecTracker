@@ -800,7 +800,7 @@ struct GenfitTrackFitter final :
         double m_eCalEndCapInnerZ;
         double m_eCalEndCapOuterZ;
 
-        std::vector<int> m_particleHypotesis = {211};   // {11,13,211,321,2212} -> e, mu, pi, K, p
+        std::vector<int> m_particleHypotesis = {13};   // {11,13,211,321,2212} -> e, mu, pi, K, p
 
         Gaudi::Property<double> m_Beta_init{this, "Beta_init", 100, "Beta Initial value"};
         Gaudi::Property<double> m_Beta_final{this, "Beta_final", 0.05, "Beta Final value"};

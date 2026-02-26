@@ -1,5 +1,7 @@
 import os
 import math 
+from urllib.parse import urlparse
+from urllib.request import urlretrieve
 from Gaudi.Configuration import INFO,DEBUG
 from Configurables import EventDataSvc,UniqueIDGenSvc
 from Configurables import RndmGenSvc
@@ -127,10 +129,18 @@ trackFinder = GGTFTrackFinder(
 )
 
 ############### Application Manager
-import subprocess
+def ensure_file(url):
+    target = os.path.basename(urlparse(url).path)
+    if os.path.exists(target):
+        return target
+    try:
+        urlretrieve(url, target)
+    except Exception as exc:
+        raise RuntimeError(f"Could not download required file {url} -> {target}") from exc
+    return target
 
 ifilename = "https://fccsw.web.cern.ch/fccsw/filesForSimDigiReco/IDEA/DataAlgFORGEANT.root"
-subprocess.run(["wget", "--no-clobber", ifilename])
+ensure_file(ifilename)
 
 mgr = ApplicationMgr(
     TopAlg=[dch_digitizer, vtxb_digitizer, vtxd_digitizer, siwrb_digitizer, siwrd_digitizer, trackFinder],
